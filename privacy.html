@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy — Nowvelope</title>
+<meta name="description" content="What Nowvelope does with your data: your captures stay on your device. No account, no servers, no tracking.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,12..30,400;0,12..30,500;1,12..30,400&family=Schibsted+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#E7EAEE; --panel:#DEE2E8; --ink:#1A1D28; --ink-2:#464C5E; --ink-3:#6B7284;
+    --line:rgba(26,29,40,.14); --accent:#3E5C86;
+    --serif:"Newsreader",Georgia,serif; --grot:"Schibsted Grotesk",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);
+    font-size:19px;line-height:1.66;-webkit-font-smoothing:antialiased}
+  .col{max-width:660px;margin:0 auto;padding:0 26px}
+  a{color:var(--accent);text-underline-offset:3px}
+  a:hover{color:var(--ink)}
+  .mast{display:flex;justify-content:space-between;align-items:baseline;
+    padding:30px 0 14px;border-bottom:1px solid var(--line)}
+  .word{font-family:var(--grot);font-weight:600;font-size:17px;text-decoration:none;color:var(--ink)}
+  .mast nav a{font-family:var(--grot);font-size:14px;color:var(--ink-3);text-decoration:none;margin-left:20px}
+  .mast nav a:hover{color:var(--ink)}
+
+  header.page{padding:44px 0 8px}
+  .kicker{font-family:var(--grot);font-size:13px;letter-spacing:.06em;color:var(--ink-3)}
+  h1{font-family:var(--grot);font-weight:600;font-size:clamp(28px,5vw,40px);letter-spacing:-.01em;
+    line-height:1.1;margin:10px 0 6px}
+  .updated{font-family:var(--grot);font-size:13px;color:var(--ink-3)}
+
+  main{padding:14px 0 0}
+  .lede{font-size:22px;line-height:1.5;margin:22px 0 8px}
+  h2{font-family:var(--grot);font-weight:600;font-size:18px;margin:38px 0 8px}
+  h2::before{content:"— ";color:var(--line)}
+  p{margin:0 0 18px;color:var(--ink)}
+  strong{font-weight:600}
+  ul{padding-left:0;list-style:none;margin:0 0 18px}
+  ul li{margin:0 0 14px;padding-left:18px;position:relative}
+  ul li::before{content:"·";position:absolute;left:4px;color:var(--ink-3)}
+  .callout{background:var(--panel);border-left:2px solid var(--accent);
+    padding:20px 22px;margin:20px 0;border-radius:2px}
+  .callout .kicker{display:block;margin-bottom:8px}
+  .callout p{margin:0;font-size:18px}
+  footer{margin-top:44px;border-top:1px solid var(--line);padding:24px 0 60px;
+    font-family:var(--grot);font-size:14px;color:var(--ink-3)}
+  footer a{color:var(--ink-3);text-decoration:none;margin-right:18px}
+  footer a:hover{color:var(--ink)}
+  a:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:2px}
+</style>
+</head>
+<body>
+<div class="col mast">
+  <a class="word" href="index.html">Nowvelope</a>
+  <nav><a href="index.html">Home</a><a href="support.html">Support</a></nav>
+</div>
+
+<div class="col">
+  <header class="page">
+    <div class="kicker">Privacy</div>
+    <h1>What Nowvelope does with your data</h1>
+    <div class="updated">Last updated 17 September 2026</div>
+  </header>
+
+  <main>
+    <p class="lede">The short version: your captures stay on your device. There is no account,
+      no Nowvelope server, and no tracking.</p>
+
+    <h2>What we collect</h2>
+    <p><strong>Nothing.</strong> Nowvelope has no account system and no backend of its own. We
+      don't collect, transmit, store on a server, sell, or share your photos, panoramas, audio, or
+      usage. There's no analytics or advertising code, and the app links no networking of its own.</p>
+
+    <h2>Where your panoramas live</h2>
+    <p>Everything a capture produces — source photos, the stitched panorama, its thumbnail, any
+      optional audio, and its private naming and location details — is stored on your device, in the
+      app's own storage. Those files may be included in your ordinary device backups according to
+      your iOS and backup settings; the app doesn't separately upload or sync them. Delete a
+      panorama and its owned files and details are deleted with it.</p>
+
+    <h2>Place naming — the one thing that uses the network</h2>
+    <div class="callout">
+      <span class="kicker">In plain terms</span>
+      <p>Place-name lookup is the only thing Nowvelope sends off your device on its own: a single
+        coordinate — latitude, longitude, altitude, accuracy, and time — to Apple's geocoder, which
+        returns a place name. Nothing else leaves your device unless you send it: your photos,
+        panoramas, and audio go only where you choose to share or export them, never to Nowvelope.
+        Scene names come from models running on your device. Nowvelope has no server of its own.</p>
+    </div>
+    <p>This happens only if you turn location on and enable place naming. What Apple's map service
+      receives is a coordinate, not your picture, and it's used to look up a concise place name — a
+      landmark, neighborhood, or city — that's then stored privately with your panorama. The request
+      is brief and cancelled after a few seconds; Nowvelope keeps only that one short name, never a
+      street address, postal code, or contact details. Capture and saving work normally with
+      location off.</p>
+
+    <h2>Permissions, and what happens if you decline</h2>
+    <ul>
+      <li><strong>Camera</strong> — the core function. Asked for when you start a capture, not at
+        launch.</li>
+      <li><strong>Location</strong> (optional) — asked for only after you turn on <em>Add Location
+        to Panoramas</em> and accept an in-app explanation. Used only to name and privately tag a
+        panorama with where it was taken; the app never asks for background or “Always” location.
+        Decline and capture still works, just without a place name.</li>
+      <li><strong>Microphone</strong> (optional) — asked for only after you turn on <em>Record
+        Ambient Audio</em> and confirm an explanation. Records environmental sound only during an
+        active capture, stored on your device, played back with that panorama. No speech
+        recognition, no transcription, no background recording. Decline and you get a normal,
+        camera-only panorama.</li>
+      <li><strong>Photos</strong> — add-only, asked for only when you choose <em>Save to Photos</em>.
+        Nowvelope adds a panorama to your library; it doesn't read your library.</li>
+    </ul>
+
+    <h2>Sharing and export</h2>
+    <p>Sharing is always something you start. Ordinary image sharing and <em>Save to Photos</em>
+      export the final panorama only, rebuilt without embedded GPS. A separate,
+      explicitly-confirmed <em>Export Capture Data</em> action makes a standard archive that
+      <em>can</em> include exact location, audio, and precise capture facts — the confirmation says
+      so plainly, and it only happens when you ask for it and choose where it goes.</p>
+
+    <h2>Children</h2>
+    <p>Nowvelope is a general-audience camera app. It doesn't knowingly collect personal information
+      from anyone, because it doesn't collect personal information at all.</p>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, the “last updated” date above changes with it. Because the app's
+      behavior and this page are kept in step, a change here reflects a real change in the app.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about your privacy? Email <a href="mailto:nowvelope@gmail.com">nowvelope@gmail.com</a>.</p>
+  </main>
+</div>
+
+<footer class="col">
+  <a href="index.html">Home</a><a href="support.html">Support</a>
+  <span>No account · No servers · No tracking</span>
+</footer>
+</body>
+</html>

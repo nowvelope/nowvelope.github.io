@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Nowvelope</title>
+<meta name="description" content="Help with Nowvelope, the on-device 360° panorama app for iPhone.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,12..30,400;0,12..30,500;1,12..30,400&family=Schibsted+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#E7EAEE; --panel:#DEE2E8; --ink:#1A1D28; --ink-2:#464C5E; --ink-3:#6B7284;
+    --line:rgba(26,29,40,.14); --accent:#3E5C86;
+    --serif:"Newsreader",Georgia,serif; --grot:"Schibsted Grotesk",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);
+    font-size:19px;line-height:1.66;-webkit-font-smoothing:antialiased}
+  .col{max-width:660px;margin:0 auto;padding:0 26px}
+  a{color:var(--accent);text-underline-offset:3px}
+  a:hover{color:var(--ink)}
+  .mast{display:flex;justify-content:space-between;align-items:baseline;
+    padding:30px 0 14px;border-bottom:1px solid var(--line)}
+  .word{font-family:var(--grot);font-weight:600;font-size:17px;text-decoration:none;color:var(--ink)}
+  .mast nav a{font-family:var(--grot);font-size:14px;color:var(--ink-3);text-decoration:none;margin-left:20px}
+  .mast nav a:hover{color:var(--ink)}
+  header.page{padding:44px 0 8px}
+  .kicker{font-family:var(--grot);font-size:13px;letter-spacing:.06em;color:var(--ink-3)}
+  h1{font-family:var(--grot);font-weight:600;font-size:clamp(28px,5vw,40px);line-height:1.1;margin:10px 0 6px}
+  main{padding:14px 0 0}
+  .lede{font-size:22px;line-height:1.5;margin:22px 0 8px}
+  h2{font-family:var(--grot);font-weight:600;font-size:18px;margin:38px 0 8px}
+  h2::before{content:"— ";color:var(--line)}
+  p{margin:0 0 18px}
+  .contact{background:var(--panel);border-left:2px solid var(--accent);padding:20px 22px;
+    margin:20px 0;border-radius:2px}
+  .contact a{font-family:var(--grot)}
+  footer{margin-top:44px;border-top:1px solid var(--line);padding:24px 0 60px;
+    font-family:var(--grot);font-size:14px;color:var(--ink-3)}
+  footer a{color:var(--ink-3);text-decoration:none;margin-right:18px}
+  footer a:hover{color:var(--ink)}
+  a:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:2px}
+</style>
+</head>
+<body>
+<div class="col mast">
+  <a class="word" href="index.html">Nowvelope</a>
+  <nav><a href="index.html">Home</a><a href="privacy.html">Privacy</a></nav>
+</div>
+<div class="col">
+  <header class="page">
+    <div class="kicker">Support</div>
+    <h1>Help with Nowvelope</h1>
+  </header>
+  <main>
+    <p class="lede">If something isn't working — a capture that won't finish, guidance that's
+      unclear, playback or export trouble — I'd like to help.</p>
+
+    <h2>Getting a clean capture</h2>
+    <p>Hold your iPhone upright in portrait, keep it steady while the sphere sets up, then follow
+      the dots to each direction. Even light and a little overlap between directions give the best
+      results. If a spot goes wrong, you can recapture just that direction.</p>
+
+    <h2>Interruptions</h2>
+    <p>Taking a call, switching apps, or locking the screen mid-capture won't lose your progress —
+      the capture is on the phone the whole time, and it picks back up where you left off.</p>
+
+    <h2>Sending a diagnostics report</h2>
+    <p>If a capture won't finish or the app gets stuck, the quickest way to get it looked at is a
+      diagnostics report. Open the <strong>About</strong> screen and choose to share it — you see
+      exactly what it contains before anything leaves your phone: recent app events, error codes, the
+      current storage and capture state, and your app version, device model, and iOS version. It never
+      includes your photos, panoramas, audio, or location.</p>
+    <p>Nothing is sent on its own. Once you've read it, share it however you like — emailing it to
+      <a href="mailto:nowvelope@gmail.com">nowvelope@gmail.com</a> is the most direct. Nowvelope has no
+      server of its own, so a report only reaches me because you chose to send it.</p>
+
+    <h2>Contact</h2>
+    <div class="contact">
+      <p style="margin:0">Email <a href="mailto:nowvelope@gmail.com">nowvelope@gmail.com</a>. For a
+        bug, the diagnostics report above tells me the most; otherwise a note about your iPhone model,
+        your iOS version, and what you were doing helps a lot.</p>
+    </div>
+  </main>
+</div>
+<footer class="col">
+  <a href="index.html">Home</a><a href="privacy.html">Privacy</a>
+</footer>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nowvelope — a 360° camera for iPhone that keeps your pictures to itself</title>
+<meta name="description" content="Nowvelope stitches a full 360° sphere on your iPhone and keeps it there. No account, no servers, no tracking.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,12..30,400;0,12..30,500;1,12..30,400&family=Schibsted+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#E7EAEE;            /* pale, cool daylight */
+    --paper-2:#DDE1E7;
+    --ink:#1A1D28;             /* indigo-tinted near-black */
+    --ink-2:#464C5E;
+    --ink-3:#6B7284;
+    --line:rgba(26,29,40,.14);
+    --accent:#3E5C86;          /* muted slate-blue, links only */
+    --serif:"Newsreader",Georgia,serif;
+    --grot:"Schibsted Grotesk",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;overflow-x:hidden;background:var(--paper);color:var(--ink);font-family:var(--serif);
+    font-size:19px;line-height:1.62;-webkit-font-smoothing:antialiased}
+  .col{max-width:660px;margin:0 auto;padding:0 26px;width:100%}
+  a{color:var(--accent);text-underline-offset:3px;text-decoration-thickness:1px}
+  a:hover{color:var(--ink)}
+
+  /* Masthead — quiet */
+  .mast{display:flex;justify-content:space-between;align-items:baseline;
+    padding:30px 0 14px;border-bottom:1px solid var(--line)}
+  .word{font-family:var(--grot);font-weight:600;font-size:17px;letter-spacing:.01em}
+  .mast nav a{font-family:var(--grot);font-size:14px;color:var(--ink-3);text-decoration:none;margin-left:20px}
+  .mast nav a:hover{color:var(--ink)}
+
+  /* Opening line — small, not a tagline */
+  .open{padding:40px 0 30px}
+  .open p{font-size:clamp(22px,3.4vw,29px);line-height:1.32;margin:0;max-width:20ch;
+    font-weight:400}
+  .open .em{font-style:italic}
+
+  /* The signature: cross-fading, slowly panning panorama band */
+  .band{position:relative;height:clamp(340px,58vh,660px);overflow:hidden;contain:paint;
+    border-block:1px solid var(--line);background:var(--paper-2)}
+  .band .layer{position:absolute;inset:0;overflow:hidden;animation:fade 26s ease-in-out infinite;will-change:opacity}
+  .band .b{animation-delay:-13s}
+  .band .track{position:absolute;top:0;left:0;display:flex;height:100%;width:max-content;animation:slide 90s linear infinite;will-change:transform}
+  .band .b .track{animation-duration:106s}
+  .band .track img{height:100%;width:auto;display:block}
+  @keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  @keyframes fade{0%,38%{opacity:1}50%,88%{opacity:0}100%{opacity:1}}
+  .cap{font-family:var(--grot);font-size:13px;color:var(--ink-3);padding:12px 0 0;
+    display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  .cap span{letter-spacing:.02em}
+
+  /* Prose — flowing, no cards */
+  main{padding:34px 0 10px}
+  main p{margin:0 0 22px;color:var(--ink)}
+  main p.sub{color:var(--ink-2)}
+  h2{font-family:var(--grot);font-weight:600;font-size:15px;letter-spacing:.02em;
+    color:var(--ink-3);text-transform:none;margin:40px 0 10px;font-feature-settings:"ss01"}
+  h2::before{content:"— ";color:var(--line)}
+  .notes{margin:26px 0 8px;padding:0;list-style:none}
+  .notes li{margin:0 0 18px;padding-left:0}
+  .notes b{font-weight:500}
+  .quiet{font-size:16px;color:var(--ink-3)}
+  .quiet a{color:var(--accent)}
+
+  footer{margin-top:48px;border-top:1px solid var(--line);padding:26px 0 60px;
+    font-family:var(--grot);font-size:14px;color:var(--ink-3);
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px}
+  footer a{color:var(--ink-3);text-decoration:none}
+  footer a:hover{color:var(--ink)}
+
+  a:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:2px}
+  html{overflow-x:hidden}
+  .band .track img{max-width:none}
+  @media (max-width:560px){
+    body{font-size:18px}
+    .col{padding:0 20px}
+    .open p{font-size:23px}
+    .cap{flex-direction:column;align-items:flex-start;gap:4px}
+    .mast nav a{margin-left:14px}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .band .layer,.band .track{animation:none}
+    .band .b{opacity:0}
+  }
+</style>
+</head>
+<body>
+  <div class="col mast">
+    <span class="word">Nowvelope</span>
+    <nav><a href="privacy.html">Privacy</a><a href="support.html">Support</a></nav>
+  </div>
+
+  <div class="col open">
+    <p>A 360° camera for iPhone that keeps your pictures <span class="em">to itself.</span></p>
+  </div>
+
+  <div class="band" aria-label="Two 360° panoramas, captured on an iPhone, slowly panning and fading between each other">
+    <div class="layer a"><div class="track"><img src="hero-emei.jpg" alt=""><img src="hero-emei.jpg" alt="" aria-hidden="true"></div></div>
+    <div class="layer b"><div class="track"><img src="hero-summit.jpg" alt=""><img src="hero-summit.jpg" alt="" aria-hidden="true"></div></div>
+  </div>
+  <div class="col cap">
+    <span>Two captures — a mountain summit, a temple at first light.</span>
+    <span>Shot on iPhone · stitched on the phone.</span>
+  </div>
+
+  <main class="col">
+    <p>Point your phone around, follow the dots to each direction, and Nowvelope stitches the
+      whole sphere into one picture you can step back inside and look around in. All of it happens
+      on the phone.</p>
+
+    <h2>It stays with you</h2>
+    <p>Most 360° apps send your frames to a server to stitch them. This one doesn't. There's no
+      account and no Nowvelope server, so nothing you shoot — no photo, no panorama, no sound —
+      is ever uploaded anywhere.</p>
+    <p class="quiet">The one thing that ever touches the network is optional and yours: turn on
+      place naming and the phone asks Apple's map service for the name of where you are — just a
+      coordinate, never your picture. <a href="privacy.html">The full account is here.</a></p>
+
+    <h2>A few things it does</h2>
+    <ul class="notes">
+      <li><b>Records the room, if you want.</b> Switch on ambient audio before a capture and the
+        sound of the place — the street, the weather — plays back with it.</li>
+      <li><b>Keeps people whole.</b> When someone walks through the shot, it handles them without
+        tearing anyone in half at a seam or leaving an accidental twin.</li>
+      <li><b>Works with no signal.</b> Since there's nothing to upload, a capture finishes the same
+        on a subway platform as at home.</li>
+    </ul>
+
+    <p class="quiet">Coming to the App Store for iPhone. Made for people who just want a personal
+      360° panorama app.</p>
+  </main>
+
+  <footer class="col">
+    <span>© 2026 Nowvelope</span>
+    <span><a href="privacy.html">Privacy</a> &nbsp;·&nbsp; <a href="support.html">Support</a></span>
+  </footer>
+</body>
+</html>
