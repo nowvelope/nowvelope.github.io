@@ -61,7 +61,7 @@
   <header class="page">
     <div class="kicker">Privacy</div>
     <h1>What Nowvelope does with your data</h1>
-    <div class="updated">Last updated 23 September 2026</div>
+    <div class="updated">Last updated 1 October 2026</div>
   </header>
 
   <main>
@@ -75,7 +75,7 @@
 
     <h2>Where your panoramas live</h2>
     <p>Everything a capture produces — source photos, the stitched panorama, its thumbnail, any
-      optional audio, and its private naming and location details — is stored on your device, in the
+      optional audio, and its private naming, location and compass-direction details — is stored on your device, in the
       app's own storage. Those files may be included in your ordinary device backups according to
       your iOS and backup settings; the app doesn't separately upload or sync them. Delete a
       panorama and its owned files and details are deleted with it.</p>
@@ -104,7 +104,9 @@
       <li><strong>Location</strong> (optional) — asked for only after you turn on <em>Add Location
         to Panoramas</em> and accept an in-app explanation. Used only to name and privately tag a
         panorama with where it was taken; the app never asks for background or “Always” location.
-        Decline and capture still works, just without a place name.</li>
+        While it's on, the app also reads the compass during the capture to record which way the
+        panorama faces. Decline and capture still works, just without a place name or compass
+        direction.</li>
       <li><strong>Microphone</strong> (optional) — asked for only after you turn on <em>Record
         Ambient Audio</em> and confirm an explanation. Records environmental sound only during an
         active capture, stored on your device, played back with that panorama. No speech
@@ -116,10 +118,15 @@
 
     <h2>Sharing and export</h2>
     <p>Sharing is always something you start. Ordinary image sharing and <em>Save to Photos</em>
-      export the final panorama only, rebuilt without embedded GPS. A separate,
+      export the final panorama only. It carries the compass direction its centre faces, when one
+      was recorded, so apps such as Google Maps can orient it; that is a direction, not a place.
+      It carries no GPS unless you turn on <em>Include Location</em> in Settings (off by default).
+      With it on, the image includes the location recorded at capture, and <em>Save to Photos</em>
+      also sets the photo's location in your library, so anyone you share it with can see where it
+      was taken. A separate,
       explicitly-confirmed <em>Export Capture Data</em> action makes a standard archive that
       <em>can</em> include your original photos, exact location, audio, and precise capture facts
-      such as camera positions and 3-D points of your surroundings — the confirmation says
+      such as camera positions, compass direction and 3-D points of your surroundings — the confirmation says
       so plainly, and it only happens when you ask for it and choose where it goes. The About screen
       can also share a diagnostics report — technical logs only, never your photos, panoramas, audio,
       or location; if you email it to us for help, we use it only to troubleshoot your issue and
