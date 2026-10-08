@@ -75,8 +75,10 @@
 
     <h2>Where your panoramas live</h2>
     <p>Everything a capture produces — source photos, the stitched panorama, its thumbnail, any
-      optional audio, and its private naming, location and compass-direction details — is stored on your device, in the
-      app's own storage. Those files may be included in your ordinary device backups according to
+      optional audio, its private naming, location and compass-direction details, and the spatial
+      data the phone measured while capturing (detected floors, walls and tables, the camera's path
+      with the 3-D points it saw, ARKit's map of the place, and on iPhones with LiDAR, depth and a
+      3-D mesh of the room) — is stored on your device, in the app's own storage. Those files may be included in your ordinary device backups according to
       your iOS and backup settings; the app doesn't separately upload or sync them. Delete a
       panorama and its owned files and details are deleted with it.</p>
 
@@ -126,7 +128,9 @@
       was taken. A separate,
       explicitly-confirmed <em>Export Capture Data</em> action makes a standard archive that
       <em>can</em> include your original photos, exact location, audio, and precise capture facts
-      such as camera positions, compass direction and 3-D points of your surroundings — the confirmation says
+      such as camera positions, compass direction, 3-D points of your surroundings, and the measured
+      spatial data (planes, depth, the camera's path, ARKit's map of the place and a 3-D mesh, which
+      reveal the room's geometry) — the confirmation says
       so plainly, and it only happens when you ask for it and choose where it goes. The About screen
       can also share a diagnostics report — technical logs, plus anything you choose to write about
       the problem, and never your photos, panoramas, audio, or location; if you email it to us for
