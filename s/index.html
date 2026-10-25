@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shared panorama — Nowvelope</title>
+<meta name="description" content="A panorama shared from Nowvelope.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,12..30,400;0,12..30,500;1,12..30,400&family=Schibsted+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#E7EAEE; --panel:#DEE2E8; --ink:#1A1D28; --ink-2:#464C5E; --ink-3:#6B7284;
+    --line:rgba(26,29,40,.14); --accent:#3E5C86;
+    --serif:"Newsreader",Georgia,serif; --grot:"Schibsted Grotesk",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);
+    font-size:19px;line-height:1.66;-webkit-font-smoothing:antialiased}
+  .col{max-width:660px;margin:0 auto;padding:0 26px}
+  a{color:var(--accent);text-underline-offset:3px}
+  a:hover{color:var(--ink)}
+  .mast{display:flex;justify-content:space-between;align-items:baseline;
+    padding:30px 0 14px;border-bottom:1px solid var(--line)}
+  .word{font-family:var(--grot);font-weight:600;font-size:17px;text-decoration:none;color:var(--ink)}
+  .mast nav a{font-family:var(--grot);font-size:14px;color:var(--ink-3);text-decoration:none;margin-left:20px}
+  .mast nav a:hover{color:var(--ink)}
+  header.page{padding:44px 0 8px}
+  .kicker{font-family:var(--grot);font-size:13px;letter-spacing:.06em;color:var(--ink-3)}
+  h1{font-family:var(--grot);font-weight:600;font-size:clamp(28px,5vw,40px);line-height:1.1;margin:10px 0 6px}
+  main{padding:14px 0 0}
+  .lede{font-size:22px;line-height:1.5;margin:22px 0 8px}
+  h2{font-family:var(--grot);font-weight:600;font-size:18px;margin:38px 0 8px}
+  p{margin:0 0 18px}
+  .contact{background:var(--panel);border-left:2px solid var(--accent);padding:20px 22px;
+    margin:20px 0;border-radius:2px}
+  .contact a{font-family:var(--grot)}
+  footer{margin-top:44px;border-top:1px solid var(--line);padding:24px 0 60px;
+    font-family:var(--grot);font-size:14px;color:var(--ink-3)}
+  footer a{color:var(--ink-3);text-decoration:none;margin-right:18px}
+  footer a:hover{color:var(--ink)}
+  a:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:2px}
+</style>
+</head>
+<body>
+<div class="col mast">
+  <a class="word" href="../index.html">Nowvelope</a>
+  <nav><a href="../index.html">Home</a><a href="../privacy.html">Privacy</a></nav>
+</div>
+<div class="col">
+  <header class="page">
+    <div class="kicker">Shared panorama</div>
+    <h1>Someone shared a panorama with you</h1>
+  </header>
+  <main>
+    <p class="lede">Open this link on an iPhone to look around the panorama and hear its sound.
+      It opens straight away, without installing an app.</p>
+    <p>A shared panorama can be viewed for a limited time after it was shared. If the link no
+      longer opens, ask the person who sent it to share it again.</p>
+  </main>
+</div>
+<footer class="col">
+  <a href="../index.html">Home</a><a href="../privacy.html">Privacy</a>
+</footer>
+</body>
+</html>
