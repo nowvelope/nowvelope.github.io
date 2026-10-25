@@ -1,0 +1,16 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["L9G96VPNNP.com.nowvelope.app"],
+        "components": [
+          { "/": "/s/", "comment": "A shared panorama link" },
+          { "/": "/s", "comment": "The same link without its trailing slash" }
+        ]
+      }
+    ]
+  },
+  "appclips": {
+    "apps": ["L9G96VPNNP.com.nowvelope.app.Clip"]
+  }
+}
