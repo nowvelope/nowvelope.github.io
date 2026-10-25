@@ -61,17 +61,19 @@
   <header class="page">
     <div class="kicker">Privacy</div>
     <h1>What Nowvelope does with your data</h1>
-    <div class="updated">Last updated 11 October 2026</div>
+    <div class="updated">Last updated 25 October 2026</div>
   </header>
 
   <main>
-    <p class="lede">The short version: your captures stay on your device. There is no account,
-      no Nowvelope server, and no tracking.</p>
+    <p class="lede">The short version: your captures stay on your device unless you share them.
+      There is no account and no tracking.</p>
 
     <h2>What we collect</h2>
-    <p><strong>Nothing.</strong> Nowvelope has no account system and no server of its own. We
-      don't collect, sell, or share your photos, panoramas, audio, location, or usage, and the app
-      contains no analytics or advertising.</p>
+    <p><strong>Nothing we can read.</strong> Nowvelope has no account system. We don't collect,
+      sell, or share your photos, panoramas, audio, location, or usage, and the app contains no
+      analytics or advertising. The one thing stored on Nowvelope's behalf is a panorama you choose
+      to share as a link, and that is encrypted so that we can't see it (see
+      <a href="#links">Shared links</a>).</p>
 
     <h2>What the app uses on your device, and why</h2>
     <p>To build a panorama, Nowvelope uses the camera, the phone's motion sensors and, on iPhones
@@ -85,7 +87,7 @@
       backups, according to your iOS and backup settings; the app doesn't separately upload or sync
       it. Delete a panorama and everything stored with it is deleted too.</p>
 
-    <h2>Place naming — the one thing that uses the network</h2>
+    <h2>Place naming — the one thing that leaves on its own</h2>
     <div class="callout">
       <span class="kicker">In plain terms</span>
       <p>Nowvelope sends nothing off your device on its own, with one exception you control: place
@@ -129,9 +131,28 @@
       If you email it to us, we use it only to troubleshoot your issue and delete it once that's
       resolved.</p>
 
+    <h2 id="links">Shared links</h2>
+    <p>You can share a panorama as a link that opens in Nowvelope, or for someone without the app,
+      in a small viewer that runs without installing it. When you do, your iPhone encrypts the
+      panorama, and its sound if you choose to include it, and stores only the encrypted copy in
+      Nowvelope's iCloud storage, which Apple runs. The key that unlocks it is part of the link and
+      is never stored with it, so neither we nor Apple can view a shared panorama, but anyone who
+      has the link can.</p>
+    <p>A link works for about a day, and the encrypted copy is then deleted, within about eight days
+      of sharing at most. Sharing a link needs you to be signed in to iCloud; opening one needs no account. Apple's
+      iCloud keeps with each shared copy an identifier for the person who shared it that is specific
+      to Nowvelope, not your Apple ID, name or email; it could show that two links came from the
+      same person. Opening a link visits Nowvelope's website, whose host can see which link was
+      opened but not the key or the panorama.</p>
+    <p>If you choose to allow saving when you share, anyone who opens the link in Nowvelope can keep
+      the panorama and its sound on their own device, where it stays after the link stops working.
+      Otherwise a link can be viewed but not saved, though anyone viewing it could take a
+      screenshot.</p>
+
     <h2>Children</h2>
     <p>Nowvelope is a general-audience camera app. It doesn't knowingly collect personal information
-      from anyone, because it doesn't collect personal information at all.</p>
+      from anyone, and a shared link holds only what its sender chose to share, encrypted so that we
+      can't see it.</p>
 
     <h2>Changes</h2>
     <p>If what Nowvelope uses, keeps, or shares changes, we update this page, and the “last
@@ -144,7 +165,7 @@
 
 <footer class="col">
   <a href="index.html">Home</a><a href="support.html">Support</a>
-  <span>No account · No servers · No tracking</span>
+  <span>No account · No tracking</span>
 </footer>
 </body>
 </html>
